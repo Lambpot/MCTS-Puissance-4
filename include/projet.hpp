@@ -125,6 +125,7 @@ public:
         unsigned re = 1;
         while (p.Nbcoups() > 0) p.EffectuerCoup(rand() % p.Nbcoups());
         if (p.Eval() == Resultat::j1gagne) re = 2;
+            
         else if (p.Eval() == Resultat::j0gagne) re = 0;
         return re;
     }

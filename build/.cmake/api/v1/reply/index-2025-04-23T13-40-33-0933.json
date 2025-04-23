@@ -8,18 +8,18 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/opt/homebrew/bin/cmake",
-			"cpack" : "/opt/homebrew/bin/cpack",
-			"ctest" : "/opt/homebrew/bin/ctest",
-			"root" : "/opt/homebrew/share/cmake"
+			"cmake" : "/opt/miniconda3/envs/myenv/lib/python3.12/site-packages/cmake/data/bin/cmake",
+			"cpack" : "/opt/miniconda3/envs/myenv/lib/python3.12/site-packages/cmake/data/bin/cpack",
+			"ctest" : "/opt/miniconda3/envs/myenv/lib/python3.12/site-packages/cmake/data/bin/ctest",
+			"root" : "/opt/miniconda3/envs/myenv/lib/python3.12/site-packages/cmake/data/share/cmake-4.0"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 4,
 			"minor" : 0,
-			"patch" : 1,
-			"string" : "4.0.1",
+			"patch" : 0,
+			"string" : "4.0.0",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-6af699862c87a05cf890.json",
+			"jsonFile" : "cache-v2-db61085ecbf57500acaf.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-41dfc1c2e16932351ccd.json",
+			"jsonFile" : "cmakeFiles-v1-642d6b8223ce29eb4e64.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-6af699862c87a05cf890.json",
+						"jsonFile" : "cache-v2-db61085ecbf57500acaf.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-41dfc1c2e16932351ccd.json",
+						"jsonFile" : "cmakeFiles-v1-642d6b8223ce29eb4e64.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

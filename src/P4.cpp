@@ -1,4 +1,5 @@
 #include "P4.hpp"
+#include "projet.hpp"
 #include <sstream>
 #include <cassert>
 #include <iostream>  // Ajouté pour std::cout
@@ -10,9 +11,9 @@
 P4::P4(bool j1) : j1aletrait(j1) {
     for (int i = 0; i < LIGNES; ++i)
         for (int j = 0; j < COLS; ++j)
-            grille[i][j] = 0;
+            grille[i][j] = 0; // il remplit les 0
     for (int j = 0; j < COLS; ++j)
-        hauteur[j] = 0;
+        hauteur[j] = 0; //ligne 0 vide
 }
 
 /**
@@ -20,24 +21,25 @@ P4::P4(bool j1) : j1aletrait(j1) {
  * @return Nombre de colonnes où un pion peut encore être joué
  */
 unsigned P4::Nbcoups() const {
-    unsigned n = 0;
+    unsigned n = 0; // n est un compteur
     for (int j = 0; j < COLS; ++j)
-        if (hauteur[j] < LIGNES)
+        if (hauteur[j] < LIGNES) 
             ++n;
-    return n;
-}
+    return n; //n est le nbr de choix colonne
+}//????????????????? POURQUOI ON A PAS DE NUMERO DE COLONNE???????????????????
 
 /**
  * @brief Applique un coup sur la colonne donnée pour le joueur courant.
  * @param i L'indice de la colonne (0 à 6)
  */
-void P4::EffectuerCoup(unsigned i) {
+void P4::EffectuerCoup(unsigned i) { // si on peut jouer sur la colonne i
     std::cout << "DEBUG: Tentative de coup dans colonne " << i << std::endl;
-    assert(i < COLS && hauteur[i] < LIGNES);
+    assert(i < COLS && hauteur[i] < LIGNES);//assert = if break ; on continue de jouer ou pas assert(VRAI)?
     int ligne = hauteur[i];
     grille[ligne][i] = j1aletrait ? 1 : 2;
     hauteur[i]++;
-    j1aletrait = !j1aletrait;
+    j1aletrait = !j1aletrait;//c'est à l'autre de jouer
+    std::cout << ToString() << std::endl;
 }
 
 /**
@@ -45,16 +47,18 @@ void P4::EffectuerCoup(unsigned i) {
  * @return Résultat de la partie : j1gagne, j0gagne, partieNulle ou enCours
  */
 Resultat P4::Eval() const {
+    std::cout << "on a entré dans Eval" << "\n";
     for (int i = 0; i < LIGNES; ++i) {
         for (int j = 0; j < COLS; ++j) {
             int joueur = grille[i][j];
             if (joueur == 0) continue;
 
             // Vérification alignement horizontal
-            if (j + 3 < COLS &&
+            if (j + 3 < COLS && // pour n'importe quelle ligne
                 joueur == grille[i][j + 1] &&
                 joueur == grille[i][j + 2] &&
                 joueur == grille[i][j + 3])
+                std::cout << "DEBUG ALIGNEMENT Horizontal détecté pour j1 à partir de ligne " << i << "\n";
                 return joueur == 1 ? Resultat::j1gagne : Resultat::j0gagne;
 
             // Vérification alignement Vertical
@@ -62,6 +66,7 @@ Resultat P4::Eval() const {
                 joueur == grille[i + 1][j] &&
                 joueur == grille[i + 2][j] &&
                 joueur == grille[i + 3][j])
+                std::cout << "DEBUG ALIGNEMENT VERTICAL détecté pour j1 à partir de ligne " << i << "\n";
                 return joueur == 1 ? Resultat::j1gagne : Resultat::j0gagne;
             
             // Vérification diagonale descendante droite
