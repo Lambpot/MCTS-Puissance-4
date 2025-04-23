@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_p4.dir/tests/test_p4.cpp.o CMakeFiles/test_p4.dir/src/P4.cpp.o CMakeFiles/test_p4.dir/src/JHP4.cpp.o -o test_p4

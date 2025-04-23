@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/wanghengze/C++/projet/src/main.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/main.dir/src/P4.cpp.o -c /Users/wanghengze/C++/projet/src/P4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/P4.cpp",
+  "output": "CMakeFiles/main.dir/src/P4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/main.dir/src/JHP4.cpp.o -c /Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "output": "CMakeFiles/main.dir/src/JHP4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_jmcts2.dir/src/test_jmcts2.cpp.o -c /Users/wanghengze/C++/projet/src/test_jmcts2.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/test_jmcts2.cpp",
+  "output": "CMakeFiles/test_jmcts2.dir/src/test_jmcts2.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_jmcts2.dir/src/P4.cpp.o -c /Users/wanghengze/C++/projet/src/P4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/P4.cpp",
+  "output": "CMakeFiles/test_jmcts2.dir/src/P4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_jmcts2.dir/src/JHP4.cpp.o -c /Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "output": "CMakeFiles/test_jmcts2.dir/src/JHP4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_p4.dir/tests/test_p4.cpp.o -c /Users/wanghengze/C++/projet/tests/test_p4.cpp",
+  "file": "/Users/wanghengze/C++/projet/tests/test_p4.cpp",
+  "output": "CMakeFiles/test_p4.dir/tests/test_p4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_p4.dir/src/P4.cpp.o -c /Users/wanghengze/C++/projet/src/P4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/P4.cpp",
+  "output": "CMakeFiles/test_p4.dir/src/P4.cpp.o"
+},
+{
+  "directory": "/Users/wanghengze/C++/projet/build",
+  "command": "/usr/bin/clang++  -I/Users/wanghengze/C++/projet/include -g -std=gnu++11 -arch arm64 -o CMakeFiles/test_p4.dir/src/JHP4.cpp.o -c /Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "file": "/Users/wanghengze/C++/projet/src/JHP4.cpp",
+  "output": "CMakeFiles/test_p4.dir/src/JHP4.cpp.o"
+}
+]

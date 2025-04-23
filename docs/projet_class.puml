@@ -1,0 +1,83 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+enum Resultat {
+  j1gagne
+  j0gagne
+  partieNulle
+}
+
+class Joueur<P> {
+  +string nom
+  +unsigned Jouer(P p)
+  +void FinPartie()
+  +string message
+}
+
+class JMCTS<P> {
+  -double a
+  -unsigned temps
+  -noeud<P>* racine
+  +unsigned Jouer(P p)
+  +unsigned JeuHasard(P p)
+}
+
+class JMCTS2<P> {
+  -double a
+  -unsigned temps
+  -noeud<P>* racine
+  +unsigned Jouer(P p)
+  +unsigned JeuHasard(P p)
+  +void FinPartie()
+}
+
+class JHP4 {
+  +unsigned Jouer(P4 p)
+}
+
+class Partie<P> {
+  -P pCourante
+  -Joueur<P>& j1
+  -Joueur<P>& j0
+  +void Commencer()
+}
+
+class noeud<P> {
+  -noeud<P>* pere
+  -noeud<P>** fils
+  -P p
+  -unsigned cross, win
+  +MeilleurFils()
+  +CalculMeilleurFils(double a)
+}
+
+class P4 {
+  +Nbcoups()
+  +Eval()
+  +EffectuerCoup(unsigned)
+  +ToString()
+  +operator==
+}
+
+class PA {
+  +Nbcoups()
+  +Eval()
+  +EffectuerCoup(unsigned)
+  +ToString()
+  +operator==
+}
+
+Joueur <|-- JMCTS
+Joueur <|-- JMCTS2
+Joueur <|-- JHP4
+Partie --> Joueur
+Partie --> Resultat
+JMCTS --> noeud
+JMCTS2 --> noeud
+noeud --> P
+JMCTS --> Resultat
+JMCTS2 --> Resultat
+Partie --> P
+JHP4 --> P4
+
+@enduml
